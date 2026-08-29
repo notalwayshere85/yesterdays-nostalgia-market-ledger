@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ghost holding a market ledger">
+  <rect width="512" height="512" rx="108" fill="#0b090b"/>
+  <circle cx="256" cy="256" r="190" fill="#171216" stroke="#a78c5a" stroke-width="12"/>
+  <path d="M155 338V226c0-77 45-128 101-128s101 51 101 128v112l-25-24-25 24-26-24-25 24-25-24-25 24-25-24z" fill="#d8ccb0" stroke="#6e5b3d" stroke-width="10" stroke-linejoin="round"/>
+  <ellipse cx="220" cy="207" rx="15" ry="23" fill="#121012"/>
+  <ellipse cx="292" cy="207" rx="15" ry="23" fill="#121012"/>
+  <rect x="208" y="250" width="122" height="92" rx="8" fill="#72475a" stroke="#c3ad7d" stroke-width="9"/>
+  <path d="M218 254v84M234 277h72M234 301h55M234 324h65" fill="none" stroke="#d8ccb0" stroke-width="8" stroke-linecap="round"/>
+</svg>
