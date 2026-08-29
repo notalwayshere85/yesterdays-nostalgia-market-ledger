@@ -76,7 +76,8 @@ button{touch-action:manipulation}
 .orn:after{right:7px;bottom:7px;transform:rotate(180deg)}
 
 .hero{
-  min-height:clamp(205px,62vw,410px);
+  min-height:0;
+  aspect-ratio:1024 / 365;
   padding:0;
   text-align:center;
   overflow:hidden;
@@ -272,7 +273,24 @@ button{touch-action:manipulation}
 .nav button{position:relative;border:0;border-right:1px solid #2c261c;background:none;color:#9e917a;padding:9px 2px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.6px}
 .nav button:first-child{border-left:1px solid #2c261c}.nav button.active{color:#cc90aa;background:linear-gradient(#33202a88,transparent)}
 .nav button.active:before{content:'';position:absolute;top:0;left:22%;right:22%;height:2px;background:var(--mauve)}
-.nav i{display:block;font-style:normal;font-size:21px;margin-bottom:4px;color:#baa57a}
+.nav i{
+  display:block;
+  width:100%;
+  height:34px;
+  margin:0 auto 3px;
+  overflow:hidden;
+  color:transparent;
+  font-size:0;
+  background-image:url('victorian-ledger-masthead.png');
+  background-repeat:no-repeat;
+  background-size:500% auto;
+  filter:drop-shadow(0 0 4px #b89a6940);
+}
+.nav button:nth-child(1) i{background-position:3% 95.4%}
+.nav button:nth-child(2) i{background-position:27% 95.4%}
+.nav button:nth-child(3) i{background-position:50% 95.4%}
+.nav button:nth-child(4) i{background-position:74% 95.4%}
+.nav button:nth-child(5) i{background-position:98% 95.4%}
 
 .form label{display:block;margin:13px 0 5px;color:#c9b99c;font-size:13px}
 .form input,.form select,.form textarea,.yearselect{
@@ -298,7 +316,7 @@ button{touch-action:manipulation}
 
 @media(max-width:520px){
   .shell{padding:9px 9px 100px}
-  .hero{min-height:62vw}
+  .hero{min-height:0;aspect-ratio:1024 / 365}
   .next{padding:41px 13px 15px}.next-layout{grid-template-columns:83px 1fr;gap:14px}.date-plaque{min-height:118px}.date-plaque strong{font-size:46px}.next-copy h2{font-size:24px}.next-copy .place{font-size:17px}.meta{font-size:14px}
   .grid{gap:7px}.tile{min-height:126px;padding:14px 4px}.tileicon{width:52px;height:52px;font-size:32px}.tile b{font-size:12px;letter-spacing:1px}
   .attention{padding:43px 13px 19px}.attention-row{grid-template-columns:34px minmax(0,1fr) auto;gap:7px}.attention-icon{width:29px;height:29px}.attention-status{max-width:92px}
@@ -306,5 +324,5 @@ button{touch-action:manipulation}
 }
 
 @media(max-width:360px){
-  .grid{grid-template-columns:1fr 1fr}.tile:last-child{grid-column:1/-1;min-height:105px}.nav button{font-size:9px}.nav i{font-size:18px}
+  .grid{grid-template-columns:1fr 1fr}.tile:last-child{grid-column:1/-1;min-height:105px}.nav button{font-size:9px}
 }
