@@ -344,3 +344,12 @@ button{touch-action:manipulation}
 @media(max-width:360px){
   .grid{grid-template-columns:1fr 1fr}.tile:last-child{grid-column:1/-1;min-height:105px}.nav button{font-size:9px}
 }
+
+/* v1.1h mobile form/date fixes */
+.datefield{width:100%;min-height:46px;padding:12px;border:1px solid #514534;border-radius:4px;background:#0b0a0a;color:inherit;text-align:left;font:inherit}
+.datefield span{opacity:.55}
+.date-modal{position:fixed;inset:0;z-index:100;background:#000b;display:flex;align-items:center;justify-content:center;padding:18px}
+.date-dialog{width:min(390px,100%);background:#111;border:1px solid #66563e;border-radius:8px;padding:14px;box-shadow:0 12px 50px #000}
+.date-head{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;text-align:center;margin-bottom:10px}.date-head button{min-height:42px;background:#171411;color:inherit;border:1px solid #514534;border-radius:4px;font-size:26px}.date-head strong{font-size:16px;letter-spacing:.5px}
+.date-week,.date-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.date-week b{text-align:center;font-size:11px;opacity:.65;padding:4px}.pickday{aspect-ratio:1;border:1px solid #40382d;background:#0b0a0a;color:inherit;border-radius:4px;font-size:15px}.pickday.selected{outline:2px solid currentColor;outline-offset:1px}.date-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+@media(max-width:600px){input,textarea,select,.datefield{scroll-margin-top:18px;scroll-margin-bottom:180px}}
